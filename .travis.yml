@@ -14,6 +14,7 @@ install:
     - pio update
 
 script:
+    - VERSION=$(git describe --tags --always --dirty)
     - pio run
 
 deploy:
