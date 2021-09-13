@@ -86,6 +86,7 @@ if os.path.exists("data/certs.ar"):
 
 arCmd = ['ar', 'q', 'data/certs.ar'] + derFiles;
 call( arCmd )
+print(f"Added {idx} certificates to data/certs.ar")
 
 for der in derFiles:
     os.unlink(der)
