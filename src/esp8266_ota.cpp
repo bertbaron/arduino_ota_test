@@ -93,7 +93,7 @@ void setup() {
   }
 }
 
-long lastCheckMillis = LONG_MIN;
+long lastCheckMillis = -UPDATE_CHECK_INTERVAL_MS;
 void loop() {
   long currentMillis = millis();
   if (do_update_check && currentMillis - lastCheckMillis > UPDATE_CHECK_INTERVAL_MS) {
